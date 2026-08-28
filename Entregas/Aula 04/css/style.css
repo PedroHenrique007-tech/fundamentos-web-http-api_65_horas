@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.destaque{
+    font-weight: bold;
+    color: brown;
+}
+
+#titulo{
+    font-size: 4.0rem;
+}
+ nav a{
+    text-decoration: none;
+    padding: 26px;
+ }
