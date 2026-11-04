@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box; /* configurações gerais */
+}/* Estrutura principal da pagina */
+body{
+    /* dimensoes e espaçamento */
+    min-height: 100vh;
+    margin:0;
+
+    /* Tipografia */
+    font-family: Arial, sans-serif;
+
+    /* Layout */
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 80px;
+
+    /* Organização das areas */
+    grid-template-areas: 
+    "cabecalho   cabecalho"
+    "menu        conteudo"
+    "rodape      rodape";
+    
+    /* Espaçamento entre as areas */
+    gap: 10px
+}
+    /* Cabeçalho */
+header{
+    grid-area: cabecalho;
+    background-color: aqua;
+}
+nav{ /* menu lateral */
+    grid-area: menu;
+    background-color: azure;
+}
+main{/* posiciona o main na area conteudo do gril principal*/
+    grid-area: conteudo;
+    /* Transforma o main em um novo grid */
+    display: grid;
+
+    /* Cria quatro colunas de larguras iguais */
+    /* Cada coluna ocupa uma função de espaço disponivel */
+
+    grid-template-columns: repeat(4, 1fr);
+    /* Espaço entre as linhas e colunas */
+    gap: 20px;
+    /* Espaço entre o conteudo e as bordas do main */
+    padding: 20px;
+
+}
+.card{
+    grid-column: span 1;
+    padding: 20px;
+    background-color: aqua;
+    border: 1px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.texto{
+     grid-column: span 2;
+     padding: 20px;
+     background-color: aquamarine;
+     border: 1px solid gray;
+     border-radius: 8px;
+}
+
+footer{
+    grid-area: rodape;
+    background-color: brown;
+    color: aliceblue;
+}

@@ -1,17 +1,338 @@
-body{
-    background-color: aqua;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* =====================================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+   ===================================================== */
+
+body {
+    /* Define a fonte principal utilizada na página */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor padrão dos textos */
+    color: #EAEAEA;
+
+    /* Define a cor de fundo da página */
+    background-color: #121212;
 }
 
-.destaque{
+
+/* =====================================================
+   CLASSE HORARIO
+   ===================================================== */
+
+.Horario {
+    /* Define o tamanho da fonte */
+    font-size: 2.5rem;
+
+    /* Define a cor do texto */
+    color: #6a7d86;
+
+    /* Cria um espaço abaixo do elemento */
+    margin-bottom: 1rem;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+header {
+    /* Define a cor de fundo do cabeçalho */
+    background-color: #1E1E1E;
+
+    /* Centraliza os textos */
+    text-align: center;
+
+    /* Adiciona espaço interno em cima e embaixo */
+    padding: 5vh 5%;
+
+    /* Cria uma linha na parte inferior do cabeçalho */
+    border-bottom: 2px solid #1d6b8f;
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+   ===================================================== */
+
+#titulo {
+    /* Define o tamanho do título */
+    font-size: 2.5rem;
+
+    /* Define a cor azul do título */
+    color: #00A8FF;
+
+    /* Adiciona espaço abaixo do título */
+    margin-bottom: 1rem;
+}
+
+
+/* =====================================================
+   CLASSE DE DESTAQUE
+   ===================================================== */
+
+.destaque {
+    /* Define a cor do texto em destaque */
+    color: #337fa5;
+
+    /* Deixa o texto em negrito */
     font-weight: bold;
-    color: brown;
 }
 
-#titulo{
-    font-size: 4.0rem;
+
+/* =====================================================
+   MENU DE NAVEGAÇÃO
+   ===================================================== */
+
+nav {
+    /* Define a largura do menu */
+    width: 90%;
+
+    /* Centraliza o menu horizontalmente */
+    margin: 2rem auto;
+
+    /* Adiciona espaço interno */
+    padding: 1rem;
+
+    /* Define a cor de fundo do menu */
+    background-color: #1E1E1E;
+
+    /* Arredonda os cantos do menu */
+    border-radius: 8px;
+
+    /* Coloca os links lado a lado */
+    display: flex;
+
+    /* Centraliza os links */
+    justify-content: center;
+
+    /* Adiciona espaço entre os links */
+    gap: 3rem;
 }
- nav a{
+
+
+/* Configura os links dentro do menu */
+nav a {
+    /* Define a largura do link */
+    padding: 1rem;
+
+    /* Define a cor dos links */
+    color: #9c0909;
+
+    /* Retira o sublinhado dos links */
     text-decoration: none;
-    padding: 26px;
- }
+}
+
+
+/* =====================================================
+   CONTEÚDO PRINCIPAL
+   ===================================================== */
+
+main {
+    /* Define a largura do conteúdo */
+    width: 90%;
+
+    /* Impede que o conteúdo fique muito largo */
+    max-width: 1000px;
+
+    /* Centraliza o conteúdo na página */
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SEÇÕES
+   ===================================================== */
+
+section {
+    /* Define a cor de fundo das seções */
+    background-color: #1E1E1E;
+
+    /* Cria espaço entre as seções */
+    margin: 2rem 0;
+
+    /* Adiciona espaço interno */
+    padding: 2rem;
+
+    /* Arredonda os cantos */
+    border-radius: 10px;
+
+    /* Cria uma sombra ao redor das seções */
+    box-shadow: 0 4px 10px #000000;
+}
+
+
+/* =====================================================
+   TABELA
+   ===================================================== */
+
+table {
+    /* Faz a tabela ocupar toda a largura disponível */
+    width: 100%;
+
+    /* Junta as bordas das células */
+    border-collapse: collapse;
+
+    /* Adiciona espaço acima da tabela */
+    margin-top: 1rem;
+}
+
+
+/* Configuração das células da tabela */
+td {
+    /* Adiciona uma borda nas células */
+    border: 1px solid #444444;
+
+    /* Adiciona espaço interno */
+    padding: 12px;
+
+    /* Centraliza o conteúdo */
+    text-align: center;
+}
+
+
+/* Configuração dos cabeçalhos da tabela */
+th {
+    /* Define a cor de fundo do cabeçalho */
+    background-color: #00A8FF;
+
+    /* Define a cor do texto */
+    color: #121212;
+}
+
+
+/* Define uma cor de fundo para as células */
+td {
+    background-color: #252525;
+}
+
+
+/* =====================================================
+   ARTIGO / PALESTRANTE
+   ===================================================== */
+
+article {
+    /* Define a cor de fundo do artigo */
+    background-color: #252525;
+
+    /* Adiciona espaço interno */
+    padding: 1.5rem;
+
+    /* Adiciona espaço acima do artigo */
+    margin-top: 1rem;
+
+    /* Cria uma borda azul no lado esquerdo */
+    border-left: 4px solid #2d6581;
+
+    /* Arredonda os cantos */
+    border-radius: 5px;
+}
+
+
+/* Título dentro do artigo */
+article h3 {
+    /* Remove o espaço superior do título */
+    margin-top: 0;
+
+    /* Define a cor branca para o nome */
+    color: #FFFFFF;
+}
+
+
+/* =====================================================
+   AVISO / ASIDE
+   ===================================================== */
+
+aside {
+    /* Adiciona espaço acima do aviso */
+    margin-top: 1rem;
+
+    /* Adiciona espaço interno */
+    padding: 1rem;
+
+    /* Define a cor de fundo */
+    background-color: #333333;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    /* Arredonda os cantos */
+    border-radius: 5px;
+}
+
+
+/* Texto dentro do aviso */
+aside p {
+    /* Define a cor azul */
+    color: #00A8FF;
+
+    /* Deixa o texto em negrito */
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   FORMULÁRIO
+   ===================================================== */
+
+form {
+    /* Faz os elementos ficarem um abaixo do outro */
+    display: flex;
+
+    /* Organiza os elementos em coluna */
+    flex-direction: column;
+
+    /* Cria um pequeno espaço entre os elementos */
+    gap: 0.6rem;
+}
+
+
+/* =====================================================
+   BOTÃO DO FORMULÁRIO
+   ===================================================== */
+
+button {
+    /* Cria um espaço acima do botão */
+    margin-top: 1rem;
+
+    /* Define o espaço interno do botão */
+    padding: 12px;
+
+    /* Remove a borda padrão */
+    border: none;
+
+    /* Arredonda os cantos */
+    border-radius: 5px;
+
+    /* Define a cor de fundo do botão */
+    background-color: #737b80;
+
+    /* Define a cor do texto */
+    color: #121212;
+
+    /* Define o tamanho da fonte */
+    font-size: 1rem;
+
+    /* Deixa o texto em negrito */
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+footer {
+    /* Define uma altura mínima para o rodapé */
+    min-height: 15vh;
+
+    /* Adiciona espaço acima do rodapé */
+    margin-top: 3rem;
+
+    /* Adiciona espaço interno */
+    padding: 2rem 5%;
+
+    /* Define a cor de fundo */
+    background-color: #0D0D0D;
+
+    /* Centraliza o texto */
+    text-align: center;
+}

@@ -1,118 +1,242 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 
+    <!-- Define o conjunto de caracteres usado na página -->
     <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Conecta o arquivo CSS externo com o HTML -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Define o título que aparece na aba do navegador -->
     <title>Aula 03</title>
 
 </head>
 
 <body>
+
+    <!-- Cabeçalho principal da página -->
     <header>
 
-        <h1 id = "titulo">A vida de um programador</h1>
-        <p> Data: 20/08/2026</p>
+        <!-- Título principal da página -->
+        <h1 id="titulo">A vida de um programador</h1>
+
+        <!-- Informa a data do evento -->
+        <p>Data: 20/08/2026</p>
+
+        <!-- Informa o local do evento -->
         <p>Local: Senai</p>
-        <p><span>Venha aprender, </span> como a vida de um programador é complicada mas que com dedicação pode superar eses desafios.</p>
+
+        <!-- Pequena descrição sobre o evento -->
+        <p>
+            <!-- O span permite destacar uma parte específica do texto usando CSS -->
+            <span>Venha aprender, </span>
+            como a vida de um programador é complicada,
+            mas que com dedicação pode superar esses desafios.
+        </p>
 
     </header>
+
+
+    <!-- Menu de navegação da página -->
     <nav>
 
-        <a href="#https://developerslife.tech/pt/">Comunicacao</a>
-        <a href="#https://www.youtube.com/watch?v=y1mbNuXyMtg">Palestra</a>
-        <a href="#https://online.pucrs.br/graduacao/analise-desenvolvimento-sistemas-full-stack-mobile?utm_source=google&utm_medium=cpc&utm_campaign=GADS_PRF_Conv_Search_PUCRSGRAD_Graduacao_TOPCUR&utm_term=faculdade%20de%20ti&utm_content=GADS_00_INST_KW_08_ADS&hsa_acc=3867638348&hsa_cam=21464004163&hsa_grp=168387098150&hsa_ad=705462994936&hsa_src=g&hsa_tgt=kwd-4546057911&hsa_kw=faculdade%20de%20ti&hsa_mt=b&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=21464004163&gbraid=0AAAAAonftwT-ol0GijfWu3c23kLEBp4_l&gclid=CjwKCAjwy5rUBhB5EiwAIoAtCnF-nr3oMs88mMG5MHrpSYmR1rKG0BaNW76clDEadiGyft6DhJntZhoCigYQAvD_BwE">Inscrição</a>
+        <!-- Link para o site relacionado à comunicação -->
+        <a href="https://developerslife.tech/pt/">
+            Comunicacao
+        </a>
+
+        <!-- Link para o vídeo da palestra -->
+        <a href="https://www.youtube.com/watch?v=y1mbNuXyMtg">
+            Palestra
+        </a>
+
+        <!-- Link para a página de inscrição -->
+        <a href="https://online.pucrs.br/graduacao/analise-desenvolvimento-sistemas-full-stack-mobile?utm_source=google&utm_medium=cpc&utm_campaign=GADS_PRF_Conv_Search_PUCRSGRAD_Graduacao_TOPCUR&utm_term=faculdade%20de%20ti&utm_content=GADS_00_INST_KW_08_ADS&hsa_acc=3867638348&hsa_cam=21464004163&hsa_grp=168387098150&hsa_ad=705462994936&hsa_src=g&hsa_tgt=kwd-4546057911&hsa_kw=faculdade%20de%20ti&hsa_mt=b&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=21464004163&gbraid=0AAAAAonftwT-ol0GijfWu3c23kLEBp4_l&gclid=CjwKCAjwy5rUBhB5EiwAIoAtCnF-nr3oMs88mMG5MHrpSYmR1rKG0BaNW76clDEadiGyft6DhJntZhoCigYQAvD_BwE">
+            Inscrição
+        </a>
 
     </nav>
 
+
+    <!-- Conteúdo principal da página -->
     <main>
+
+
+        <!-- Seção relacionada à comunicação e horários -->
         <section id="comunicacao">
+
+            <!-- Título da seção -->
             <h2>Horarios das Palestras</h2>
 
+
+            <!-- Tabela com os horários das atividades -->
             <table>
-                <thead> 
+
+                <!-- Cabeçalho da tabela -->
+                <thead class="Horario">
+
                     <tr>
+
+                        <!-- Coluna que mostra o horário -->
                         <td>Horario</td>
 
-                    </tr>
-                    <tr>
+                        <!-- Coluna que mostra a atividade -->
                         <td>Atividade</td>
-                    </tr>
-                    
-                    </thead>
-                <tbody>
 
+                    </tr>
+
+                </thead>
+
+
+                <!-- Corpo da tabela -->
+                <tbody class="Horario">
+
+                    <!-- Primeira atividade -->
                     <tr>
+
+                        <!-- Horário da atividade -->
                         <td>07h30</td>
-                    </tr>
-                    <tr>
+
+                        <!-- Nome da atividade -->
                         <td>Abertura</td>
+
                     </tr>
+
+
+                    <!-- Segunda atividade -->
                     <tr>
+
+                        <!-- Horário da atividade -->
                         <td>12h00</td>
-                    </tr>
-                    <tr>
+
+                        <!-- Nome da atividade -->
                         <td>Palestra</td>
+
                     </tr>
 
                 </tbody>
+
             </table>
 
         </section>
 
 
+        <!-- Seção com informações sobre a palestra -->
         <section id="palestra">
+
+            <!-- Título da seção com a classe destaque -->
             <h2 class="destaque">Palestra</h2>
 
+
+            <!-- Article representa um conteúdo independente da seção -->
             <article>
 
-                
-                    <h3>Pedro</h3>
-                    <p>Programador</p>
-                
-            </article>
-            
-            <aside>
-                <p>Vagas Limitadas</p>
-            </aside>
+                <!-- Nome do palestrante -->
+                <h3>Pedro</h3>
 
+                <!-- Função ou profissão do palestrante -->
+                <p>Programador</p>
+
+            </article>
+
+
+            <!-- Aside utilizado para mostrar uma informação importante -->
+            <aside>
+
+                <!-- Aviso sobre a quantidade de vagas -->
+                <p>Vagas Limitadas</p>
+
+            </aside>
 
         </section>
 
 
+        <!-- Seção destinada à inscrição -->
         <section id="inscricao">
+
+            <!-- Título da seção -->
             <h2>Inscricao</h2>
 
+
+            <!-- Formulário para o usuário realizar a inscrição -->
             <form action="#inscrever" method="POST">
+
+
+                <!-- Campo para informar o nome -->
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
 
+                <!-- Campo de texto para digitar o nome -->
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                >
+
+
+                <!-- Campo para informar o e-mail -->
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
 
+                <!-- Campo que aceita um endereço de e-mail -->
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+
+                <!-- Campo para escolher o turno -->
                 <label for="turno">Turno:</label>
+
+                <!-- Lista de opções de turno -->
                 <select id="turno" name="turno">
+
+                    <!-- Opção de turno da manhã -->
                     <option>Manhã</option>
+
+                    <!-- Opção de turno da tarde -->
                     <option>Tarde</option>
+
+                    <!-- Opção de turno da noite -->
                     <option>Noite</option>
+
                 </select>
 
-             
-                 <button type="submit">Se cadastrar</button>
-             </form>
-        </section> 
 
-    </main> 
+                <!-- Botão utilizado para enviar o formulário -->
+                <button type="submit">
+                    Se cadastrar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
 
 
+    <!-- Rodapé da página -->
     <footer>
-        <p> pedro@programador.com  2026</p>
+
+        <!-- E-mail para contato -->
+        <p>pedro@programador.com 2026</p>
+
+        <!-- Número de telefone para contato -->
         <p>(47) 99899-8099</p>
+
+        <!-- Símbolo de copyright -->
         <p>&copy;</p>
+
     </footer>
 
 
 </body>
+
 </html>

@@ -1,0 +1,361 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    color: #222;
+}
+
+
+/* Centraliza o título e a descrição */
+header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+header h1 {
+    background-color: #000000;
+    color: white;
+
+    padding: 15px 20px;
+
+    margin: 0 auto 30px auto;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* Menu */
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.logo p {
+    margin: 0;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.nav-links a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Área principal */
+main {
+    text-align: center;
+}
+
+
+/* Grade dos cards */
+.grade-de-cards {
+    display: grid;
+
+    /* Começa com 1 coluna */
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    justify-content: center;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* Estilo dos cards */
+.card,
+.iPhone {
+    width: 100%;
+
+    min-height: 330px;
+
+    padding: 20px;
+
+    border: 2px solid #222;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Card do iPhone */
+.iPhone {
+    background-color: #eeeaff;
+
+    border-color: #d6ccff;
+
+    /* Define a ordem do card */
+    order: 2;
+}
+
+
+/* Card Samsung */
+.samsung {
+    background-color: #e5f2ff;
+
+    border-color: #c5e2ff;
+}
+
+
+/* Card Xiaomi */
+.xiaomi {
+    background-color: #fff0df;
+
+    border-color: #ffd8ad;
+}
+
+
+/* Card Nokia */
+.nokia {
+    background-color: #e5f6ed;
+
+    border-color: #c3ead5;
+}
+
+
+/* Card Poco */
+.poco {
+    background-color: #e7f1ff;
+
+    border-color: #c5ddff;
+}
+
+
+/* Card Mi Band */
+.mi-band {
+    background-color: #ffe8f0;
+
+    border-color: #ffc9d9;
+}
+
+
+/* Título dos cards */
+.card h2,
+.iPhone h2 {
+    margin-top: 10px;
+
+    font-size: 22px;
+}
+
+
+/* Texto dos cards */
+.card p,
+.iPhone p {
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* Preço dos smartphones */
+.preco {
+    font-size: 20px !important;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+/* Nome da marca */
+.card span,
+.iPhone span {
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+
+/* Destaque */
+.destaque {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background-color: #222;
+
+    color: white;
+}
+
+
+/* Texto oculto */
+.oculto {
+    display: none;
+}
+
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+
+/* TABLET - A partir de 768px */
+
+
+@media (min-width: 768px) {
+
+    .grade-de-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* DESKTOP - A partir de 1024px */
+
+
+@media (min-width: 1024px) {
+
+    .grade-de-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+/* TELA MENOR QUE 768px */
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+
+    .nav-links {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .grade-de-cards {
+        width: 100%;
+    }
+
+}
+
+
+
+/* CELULAR - TELA MENOR QUE 480px */
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    header h1 {
+        font-size: 24px;
+
+        padding: 10px;
+    }
+
+
+    .logo p {
+        font-size: 14px;
+    }
+
+
+    .nav-links {
+        gap: 10px;
+
+        font-size: 14px;
+    }
+
+
+    .card,
+    .iPhone {
+        width: 100%;
+
+        min-height: 300px;
+
+        padding: 15px;
+    }
+
+
+    .card h2,
+    .iPhone h2 {
+        font-size: 18px;
+    }
+
+
+    .card p,
+    .iPhone p {
+        font-size: 14px;
+    }
+
+
+    .preco {
+        font-size: 18px !important;
+    }
+
+}
+
